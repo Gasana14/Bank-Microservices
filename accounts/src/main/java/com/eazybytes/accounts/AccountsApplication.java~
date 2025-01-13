@@ -22,11 +22,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				contact = @Contact(
 						name = "Gasana Theophile",
 						email = "gasana141414@gmail.com",
-						url = "https://github.com/Gasana14/Bank-Microservices"
+						url = "https://www.eazybytes.com"
 				),
 				license = @License(
 						name = "Apache 2.0",
-						url = "https://github.com/Gasana14/Bank-Microservices"
+						url = "https://www.eazybytes.com"
 				)
 		),
 		externalDocs = @ExternalDocumentation(
