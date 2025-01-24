@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "cody14/accounts:s4"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - gtbank
+
+  loans:
+    image: "cody14/loans:s4"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - gtbank
+
+  cards:
+    image: "cody14/cards:s4"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - gtbank
+
+networks:
+    gtbank:
+        driver: "bridge"
